@@ -1,11 +1,6 @@
 #!/bin/bash -x
-#
 # Builds a Docker image and pushes to an AWS ECR repository
-
-# name of the file - push.sh
-
 set -e
-
 source_path="$1" # 1st argument from command line
 repository_url="$2" # 2nd argument from command line
 tag="${3:-latest}" # Checks if 3rd argument exists, if not, use "latest"
